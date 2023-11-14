@@ -33,7 +33,7 @@ ifeq ($(OS),Linux)
 WARNS = -Wno-write-strings -Wall -Wno-unused-but-set-variable -Wno-unused-variable -Wno-format-overflow
 ifeq ($(USE_SDL),1)
 CPPFLAGS=$(SDL_INC)
-LDFLAGS=-$(SDL_LIBS)
+LDFLAGS=$(SDL_LIBS)
 else
 CPPFLAGS=-I/opt/X11/include
 LDFLAGS=-L/usr/X11/lib -lm -lX11
